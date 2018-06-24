@@ -93,7 +93,7 @@ class HelperService{
                 ProgressHUD.showError(error!.localizedDescription)
                 return
             }
-            Api.Feed.REF_FEED.child(Auth.auth().currentUser!.uid).child(newPostId).setValue([])
+            Api.Feed.REF_FEED.child(Auth.auth().currentUser!.uid).child(newPostId).setValue(true)
             Api.Follow.REF_FOLLOWER.child(Auth.auth().currentUser!.uid).observeSingleEvent(of: .value, with: {
                 snapshot in
                 let arraysnapshot = snapshot.children.allObjects as! [DataSnapshot]
