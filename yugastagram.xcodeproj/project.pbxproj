@@ -7,21 +7,119 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		92B407C620D77B58003CBC8A /* FeedApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B407C520D77B58003CBC8A /* FeedApi.swift */; };
+		92B407C820D797E5003CBC8A /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B407C720D797E5003CBC8A /* SearchViewController.swift */; };
+		92B407CA20D7D47D003CBC8A /* ProfileUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B407C920D7D47D003CBC8A /* ProfileUserViewController.swift */; };
+		92B407CC20D8F034003CBC8A /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B407CB20D8F034003CBC8A /* SettingTableViewController.swift */; };
+		92B407CE20D927F4003CBC8A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B407CD20D927F4003CBC8A /* DetailViewController.swift */; };
+		92B407D020DB31A8003CBC8A /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B407CF20DB31A8003CBC8A /* FilterViewController.swift */; };
+		92B407D220DB391D003CBC8A /* FilterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B407D120DB391D003CBC8A /* FilterCollectionViewCell.swift */; };
+		92B407D420DB8203003CBC8A /* HashtagApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B407D320DB8203003CBC8A /* HashtagApi.swift */; };
+		92B407D620DC0945003CBC8A /* HashTagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B407D520DC0945003CBC8A /* HashTagViewController.swift */; };
+		92B407D820DCEB11003CBC8A /* ActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B407D720DCEB11003CBC8A /* ActivityTableViewCell.swift */; };
+		92B407DA20DCF45C003CBC8A /* NotificationApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B407D920DCF45C003CBC8A /* NotificationApi.swift */; };
+		92B407DC20DCF774003CBC8A /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B407DB20DCF774003CBC8A /* Notification.swift */; };
+		92B407DE20DF955C003CBC8A /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B407DD20DF955C003CBC8A /* WalkthroughViewController.swift */; };
+		92B407E020DF9766003CBC8A /* WalkthroughPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B407DF20DF9766003CBC8A /* WalkthroughPageViewController.swift */; };
 		92F274C820C7944E0009194B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F274C720C7944E0009194B /* AppDelegate.swift */; };
-		92F274CA20C7944E0009194B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F274C920C7944E0009194B /* ViewController.swift */; };
-		92F274CD20C7944E0009194B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92F274CB20C7944E0009194B /* Main.storyboard */; };
+		92F274CD20C7944E0009194B /* Start.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92F274CB20C7944E0009194B /* Start.storyboard */; };
 		92F274CF20C794510009194B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92F274CE20C794510009194B /* Assets.xcassets */; };
 		92F274D220C794510009194B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92F274D020C794510009194B /* LaunchScreen.storyboard */; };
+		92F274DA20C7947A0009194B /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F274D920C7947A0009194B /* SignInViewController.swift */; };
+		92F274DE20C79D880009194B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F274DD20C79D880009194B /* SignUpViewController.swift */; };
+		92F274E020C7B84A0009194B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F274DF20C7B84A0009194B /* HomeViewController.swift */; };
+		92F274E220C7B8780009194B /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F274E120C7B8780009194B /* ActivityViewController.swift */; };
+		92F274E420C7B8A00009194B /* DiscoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F274E320C7B8A00009194B /* DiscoveryViewController.swift */; };
+		92F274E620C7B8C40009194B /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F274E520C7B8C40009194B /* CameraViewController.swift */; };
+		92F274E820C7B8F10009194B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F274E720C7B8F10009194B /* ProfileViewController.swift */; };
+		92F274EA20C7C68C0009194B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92F274E920C7C68B0009194B /* Main.storyboard */; };
+		92F274EC20C7CCAD0009194B /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92F274EB20C7CCAD0009194B /* Home.storyboard */; };
+		92F274EE20C7CD4E0009194B /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92F274ED20C7CD4E0009194B /* Discover.storyboard */; };
+		92F274F020C7CDC00009194B /* Camera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92F274EF20C7CDC00009194B /* Camera.storyboard */; };
+		92F274F220C7CDFE0009194B /* Activity.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92F274F120C7CDFE0009194B /* Activity.storyboard */; };
+		92F274F420C7CED50009194B /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92F274F320C7CED50009194B /* Profile.storyboard */; };
+		92F274FB20C80DD50009194B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92F274FA20C80DD50009194B /* GoogleService-Info.plist */; };
+		92F274FF20CBD8600009194B /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F274FE20CBD8600009194B /* AuthService.swift */; };
+		92F2750120CD30640009194B /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F2750020CD30640009194B /* Config.swift */; };
+		92F2750520CE074E0009194B /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F2750420CE074E0009194B /* Post.swift */; };
+		92F2750820D032710009194B /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F2750720D032710009194B /* HomeTableViewCell.swift */; };
+		92F2750B20D0742A0009194B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F2750A20D0742A0009194B /* User.swift */; };
+		92F2750D20D2B28F0009194B /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F2750C20D2B28F0009194B /* CommentViewController.swift */; };
+		92F2750F20D2B2B00009194B /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F2750E20D2B2B00009194B /* CommentTableViewCell.swift */; };
+		92F2751120D2E3690009194B /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F2751020D2E3690009194B /* Comment.swift */; };
+		92F2751320D3A0600009194B /* PostApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F2751220D3A0600009194B /* PostApi.swift */; };
+		92F2751520D3A7970009194B /* UserApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F2751420D3A7970009194B /* UserApi.swift */; };
+		92F2751720D3AC0A0009194B /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F2751620D3AC0A0009194B /* Api.swift */; };
+		92F2751920D3AE3B0009194B /* CommentApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F2751820D3AE3B0009194B /* CommentApi.swift */; };
+		92F2751B20D3B3B30009194B /* Post_CommentApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F2751A20D3B3B30009194B /* Post_CommentApi.swift */; };
+		92F2751D20D566950009194B /* HeaderProfileCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F2751C20D566950009194B /* HeaderProfileCollectionReusableView.swift */; };
+		92F2751F20D5845A0009194B /* MyPostApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F2751E20D5845A0009194B /* MyPostApi.swift */; };
+		92F2752320D594230009194B /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F2752220D594230009194B /* PhotoCollectionViewCell.swift */; };
+		92F2752520D5C6490009194B /* HelperService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F2752420D5C6490009194B /* HelperService.swift */; };
+		92F2752720D651B90009194B /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F2752620D651B90009194B /* PeopleViewController.swift */; };
+		92F2752920D652420009194B /* PeopleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F2752820D652420009194B /* PeopleTableViewCell.swift */; };
+		92F2752B20D687480009194B /* FollowApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F2752A20D687480009194B /* FollowApi.swift */; };
+		98D9199A90F474D5E72D4C8B /* Pods_yugastagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9090261C4AFA85ECDC87F785 /* Pods_yugastagram.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04FA5A380106B98B1C17ED5A /* Pods-yugastagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yugastagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-yugastagram/Pods-yugastagram.release.xcconfig"; sourceTree = "<group>"; };
+		1C6767033608A0670A8ED7BA /* Pods-yugastagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yugastagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yugastagram/Pods-yugastagram.debug.xcconfig"; sourceTree = "<group>"; };
+		9090261C4AFA85ECDC87F785 /* Pods_yugastagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yugastagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92B407C520D77B58003CBC8A /* FeedApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedApi.swift; sourceTree = "<group>"; };
+		92B407C720D797E5003CBC8A /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		92B407C920D7D47D003CBC8A /* ProfileUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileUserViewController.swift; sourceTree = "<group>"; };
+		92B407CB20D8F034003CBC8A /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
+		92B407CD20D927F4003CBC8A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		92B407CF20DB31A8003CBC8A /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		92B407D120DB391D003CBC8A /* FilterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCollectionViewCell.swift; sourceTree = "<group>"; };
+		92B407D320DB8203003CBC8A /* HashtagApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashtagApi.swift; sourceTree = "<group>"; };
+		92B407D520DC0945003CBC8A /* HashTagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashTagViewController.swift; sourceTree = "<group>"; };
+		92B407D720DCEB11003CBC8A /* ActivityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTableViewCell.swift; sourceTree = "<group>"; };
+		92B407D920DCF45C003CBC8A /* NotificationApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationApi.swift; sourceTree = "<group>"; };
+		92B407DB20DCF774003CBC8A /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		92B407DD20DF955C003CBC8A /* WalkthroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughViewController.swift; sourceTree = "<group>"; };
+		92B407DF20DF9766003CBC8A /* WalkthroughPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughPageViewController.swift; sourceTree = "<group>"; };
 		92F274C420C7944E0009194B /* yugastagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yugastagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92F274C720C7944E0009194B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		92F274C920C7944E0009194B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		92F274CC20C7944E0009194B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		92F274CC20C7944E0009194B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Start.storyboard; sourceTree = "<group>"; };
 		92F274CE20C794510009194B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92F274D120C794510009194B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92F274D320C794510009194B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92F274D920C7947A0009194B /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		92F274DD20C79D880009194B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		92F274DF20C7B84A0009194B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		92F274E120C7B8780009194B /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
+		92F274E320C7B8A00009194B /* DiscoveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryViewController.swift; sourceTree = "<group>"; };
+		92F274E520C7B8C40009194B /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		92F274E720C7B8F10009194B /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		92F274E920C7C68B0009194B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		92F274EB20C7CCAD0009194B /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		92F274ED20C7CD4E0009194B /* Discover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Discover.storyboard; sourceTree = "<group>"; };
+		92F274EF20C7CDC00009194B /* Camera.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Camera.storyboard; sourceTree = "<group>"; };
+		92F274F120C7CDFE0009194B /* Activity.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Activity.storyboard; sourceTree = "<group>"; };
+		92F274F320C7CED50009194B /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		92F274FA20C80DD50009194B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		92F274FE20CBD8600009194B /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		92F2750020CD30640009194B /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		92F2750420CE074E0009194B /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		92F2750720D032710009194B /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		92F2750A20D0742A0009194B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		92F2750C20D2B28F0009194B /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
+		92F2750E20D2B2B00009194B /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		92F2751020D2E3690009194B /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		92F2751220D3A0600009194B /* PostApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostApi.swift; sourceTree = "<group>"; };
+		92F2751420D3A7970009194B /* UserApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApi.swift; sourceTree = "<group>"; };
+		92F2751620D3AC0A0009194B /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		92F2751820D3AE3B0009194B /* CommentApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentApi.swift; sourceTree = "<group>"; };
+		92F2751A20D3B3B30009194B /* Post_CommentApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post_CommentApi.swift; sourceTree = "<group>"; };
+		92F2751C20D566950009194B /* HeaderProfileCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderProfileCollectionReusableView.swift; sourceTree = "<group>"; };
+		92F2751E20D5845A0009194B /* MyPostApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPostApi.swift; sourceTree = "<group>"; };
+		92F2752220D594230009194B /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		92F2752420D5C6490009194B /* HelperService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperService.swift; sourceTree = "<group>"; };
+		92F2752620D651B90009194B /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
+		92F2752820D652420009194B /* PeopleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleTableViewCell.swift; sourceTree = "<group>"; };
+		92F2752A20D687480009194B /* FollowApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowApi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +127,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98D9199A90F474D5E72D4C8B /* Pods_yugastagram.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3FBB1A1E25E3AFB5D843E673 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1C6767033608A0670A8ED7BA /* Pods-yugastagram.debug.xcconfig */,
+				04FA5A380106B98B1C17ED5A /* Pods-yugastagram.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		92F274BB20C7944E0009194B = {
 			isa = PBXGroup;
 			children = (
 				92F274C620C7944E0009194B /* yugastagram */,
 				92F274C520C7944E0009194B /* Products */,
+				3FBB1A1E25E3AFB5D843E673 /* Pods */,
+				A232E96275F99E6BFBA46FBE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +165,100 @@
 			isa = PBXGroup;
 			children = (
 				92F274C720C7944E0009194B /* AppDelegate.swift */,
-				92F274C920C7944E0009194B /* ViewController.swift */,
-				92F274CB20C7944E0009194B /* Main.storyboard */,
+				92F274FE20CBD8600009194B /* AuthService.swift */,
+				92F2750020CD30640009194B /* Config.swift */,
+				92F2751220D3A0600009194B /* PostApi.swift */,
+				92F2751420D3A7970009194B /* UserApi.swift */,
+				92F2752A20D687480009194B /* FollowApi.swift */,
+				92B407D920DCF45C003CBC8A /* NotificationApi.swift */,
+				92B407C520D77B58003CBC8A /* FeedApi.swift */,
+				92F2751820D3AE3B0009194B /* CommentApi.swift */,
+				92F2751A20D3B3B30009194B /* Post_CommentApi.swift */,
+				92F2751620D3AC0A0009194B /* Api.swift */,
+				92F2751E20D5845A0009194B /* MyPostApi.swift */,
+				92F2752420D5C6490009194B /* HelperService.swift */,
+				92B407D320DB8203003CBC8A /* HashtagApi.swift */,
+				92F2750920D032870009194B /* Views */,
+				92F2750620D031B30009194B /* Model */,
+				92F274F620C809EB0009194B /* ViewControllers */,
+				92F274F720C80A220009194B /* Storybords */,
 				92F274CE20C794510009194B /* Assets.xcassets */,
 				92F274D020C794510009194B /* LaunchScreen.storyboard */,
+				92F274FA20C80DD50009194B /* GoogleService-Info.plist */,
 				92F274D320C794510009194B /* Info.plist */,
 			);
 			path = yugastagram;
+			sourceTree = "<group>";
+		};
+		92F274F620C809EB0009194B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				92F274D920C7947A0009194B /* SignInViewController.swift */,
+				92F274DD20C79D880009194B /* SignUpViewController.swift */,
+				92F274DF20C7B84A0009194B /* HomeViewController.swift */,
+				92F2750C20D2B28F0009194B /* CommentViewController.swift */,
+				92F274E320C7B8A00009194B /* DiscoveryViewController.swift */,
+				92B407C720D797E5003CBC8A /* SearchViewController.swift */,
+				92F274E520C7B8C40009194B /* CameraViewController.swift */,
+				92B407CF20DB31A8003CBC8A /* FilterViewController.swift */,
+				92F274E120C7B8780009194B /* ActivityViewController.swift */,
+				92F274E720C7B8F10009194B /* ProfileViewController.swift */,
+				92B407C920D7D47D003CBC8A /* ProfileUserViewController.swift */,
+				92B407CB20D8F034003CBC8A /* SettingTableViewController.swift */,
+				92F2752620D651B90009194B /* PeopleViewController.swift */,
+				92B407CD20D927F4003CBC8A /* DetailViewController.swift */,
+				92B407D520DC0945003CBC8A /* HashTagViewController.swift */,
+				92B407DD20DF955C003CBC8A /* WalkthroughViewController.swift */,
+				92B407DF20DF9766003CBC8A /* WalkthroughPageViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		92F274F720C80A220009194B /* Storybords */ = {
+			isa = PBXGroup;
+			children = (
+				92F274E920C7C68B0009194B /* Main.storyboard */,
+				92F274F320C7CED50009194B /* Profile.storyboard */,
+				92F274F120C7CDFE0009194B /* Activity.storyboard */,
+				92F274EF20C7CDC00009194B /* Camera.storyboard */,
+				92F274ED20C7CD4E0009194B /* Discover.storyboard */,
+				92F274EB20C7CCAD0009194B /* Home.storyboard */,
+				92F274CB20C7944E0009194B /* Start.storyboard */,
+			);
+			path = Storybords;
+			sourceTree = "<group>";
+		};
+		92F2750620D031B30009194B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				92F2750420CE074E0009194B /* Post.swift */,
+				92F2750A20D0742A0009194B /* User.swift */,
+				92F2751020D2E3690009194B /* Comment.swift */,
+				92B407DB20DCF774003CBC8A /* Notification.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		92F2750920D032870009194B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				92F2750720D032710009194B /* HomeTableViewCell.swift */,
+				92F2750E20D2B2B00009194B /* CommentTableViewCell.swift */,
+				92F2751C20D566950009194B /* HeaderProfileCollectionReusableView.swift */,
+				92F2752220D594230009194B /* PhotoCollectionViewCell.swift */,
+				92F2752820D652420009194B /* PeopleTableViewCell.swift */,
+				92B407D120DB391D003CBC8A /* FilterCollectionViewCell.swift */,
+				92B407D720DCEB11003CBC8A /* ActivityTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A232E96275F99E6BFBA46FBE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9090261C4AFA85ECDC87F785 /* Pods_yugastagram.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +268,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92F274D620C794510009194B /* Build configuration list for PBXNativeTarget "yugastagram" */;
 			buildPhases = (
+				BDE77B7A4DBE7AC40AA42E50 /* [CP] Check Pods Manifest.lock */,
 				92F274C020C7944E0009194B /* Sources */,
 				92F274C120C7944E0009194B /* Frameworks */,
 				92F274C220C7944E0009194B /* Resources */,
+				D5EF848C11E301E3C5CC8CD5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,32 +322,130 @@
 			buildActionMask = 2147483647;
 			files = (
 				92F274D220C794510009194B /* LaunchScreen.storyboard in Resources */,
+				92F274F220C7CDFE0009194B /* Activity.storyboard in Resources */,
+				92F274F420C7CED50009194B /* Profile.storyboard in Resources */,
+				92F274F020C7CDC00009194B /* Camera.storyboard in Resources */,
+				92F274EA20C7C68C0009194B /* Main.storyboard in Resources */,
+				92F274EC20C7CCAD0009194B /* Home.storyboard in Resources */,
+				92F274FB20C80DD50009194B /* GoogleService-Info.plist in Resources */,
 				92F274CF20C794510009194B /* Assets.xcassets in Resources */,
-				92F274CD20C7944E0009194B /* Main.storyboard in Resources */,
+				92F274EE20C7CD4E0009194B /* Discover.storyboard in Resources */,
+				92F274CD20C7944E0009194B /* Start.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BDE77B7A4DBE7AC40AA42E50 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-yugastagram-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5EF848C11E301E3C5CC8CD5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-yugastagram/Pods-yugastagram-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/KILabel/KILabel.framework",
+				"${BUILT_PRODUCTS_DIR}/ProgressHUD/ProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KILabel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yugastagram/Pods-yugastagram-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		92F274C020C7944E0009194B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92F274CA20C7944E0009194B /* ViewController.swift in Sources */,
+				92B407CE20D927F4003CBC8A /* DetailViewController.swift in Sources */,
+				92B407CC20D8F034003CBC8A /* SettingTableViewController.swift in Sources */,
+				92B407D620DC0945003CBC8A /* HashTagViewController.swift in Sources */,
+				92B407C820D797E5003CBC8A /* SearchViewController.swift in Sources */,
+				92F2750D20D2B28F0009194B /* CommentViewController.swift in Sources */,
+				92F2750B20D0742A0009194B /* User.swift in Sources */,
+				92B407E020DF9766003CBC8A /* WalkthroughPageViewController.swift in Sources */,
+				92F2752920D652420009194B /* PeopleTableViewCell.swift in Sources */,
+				92F2751D20D566950009194B /* HeaderProfileCollectionReusableView.swift in Sources */,
+				92B407DE20DF955C003CBC8A /* WalkthroughViewController.swift in Sources */,
+				92F274DE20C79D880009194B /* SignUpViewController.swift in Sources */,
+				92F2751F20D5845A0009194B /* MyPostApi.swift in Sources */,
+				92F2751720D3AC0A0009194B /* Api.swift in Sources */,
+				92B407C620D77B58003CBC8A /* FeedApi.swift in Sources */,
+				92B407DA20DCF45C003CBC8A /* NotificationApi.swift in Sources */,
+				92F2750520CE074E0009194B /* Post.swift in Sources */,
+				92F274E420C7B8A00009194B /* DiscoveryViewController.swift in Sources */,
+				92F274DA20C7947A0009194B /* SignInViewController.swift in Sources */,
+				92F2751B20D3B3B30009194B /* Post_CommentApi.swift in Sources */,
+				92B407D820DCEB11003CBC8A /* ActivityTableViewCell.swift in Sources */,
+				92F274FF20CBD8600009194B /* AuthService.swift in Sources */,
+				92F2750F20D2B2B00009194B /* CommentTableViewCell.swift in Sources */,
 				92F274C820C7944E0009194B /* AppDelegate.swift in Sources */,
+				92F2750820D032710009194B /* HomeTableViewCell.swift in Sources */,
+				92F274E620C7B8C40009194B /* CameraViewController.swift in Sources */,
+				92B407D220DB391D003CBC8A /* FilterCollectionViewCell.swift in Sources */,
+				92B407D420DB8203003CBC8A /* HashtagApi.swift in Sources */,
+				92B407D020DB31A8003CBC8A /* FilterViewController.swift in Sources */,
+				92F2751920D3AE3B0009194B /* CommentApi.swift in Sources */,
+				92F2751120D2E3690009194B /* Comment.swift in Sources */,
+				92F2752320D594230009194B /* PhotoCollectionViewCell.swift in Sources */,
+				92F2752B20D687480009194B /* FollowApi.swift in Sources */,
+				92F274E220C7B8780009194B /* ActivityViewController.swift in Sources */,
+				92F2752720D651B90009194B /* PeopleViewController.swift in Sources */,
+				92B407CA20D7D47D003CBC8A /* ProfileUserViewController.swift in Sources */,
+				92F2750120CD30640009194B /* Config.swift in Sources */,
+				92F274E820C7B8F10009194B /* ProfileViewController.swift in Sources */,
+				92F2752520D5C6490009194B /* HelperService.swift in Sources */,
+				92B407DC20DCF774003CBC8A /* Notification.swift in Sources */,
+				92F2751520D3A7970009194B /* UserApi.swift in Sources */,
+				92F274E020C7B84A0009194B /* HomeViewController.swift in Sources */,
+				92F2751320D3A0600009194B /* PostApi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		92F274CB20C7944E0009194B /* Main.storyboard */ = {
+		92F274CB20C7944E0009194B /* Start.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				92F274CC20C7944E0009194B /* Base */,
 			);
-			name = Main.storyboard;
+			name = Start.storyboard;
 			sourceTree = "<group>";
 		};
 		92F274D020C794510009194B /* LaunchScreen.storyboard */ = {
@@ -278,6 +575,7 @@
 		};
 		92F274D720C794510009194B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C6767033608A0670A8ED7BA /* Pods-yugastagram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +594,7 @@
 		};
 		92F274D820C794510009194B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04FA5A380106B98B1C17ED5A /* Pods-yugastagram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
