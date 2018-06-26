@@ -93,13 +93,13 @@ class HelperService{
                 ProgressHUD.showError(error!.localizedDescription)
                 return
             }
-            Api.Feed.REF_FEED.child(Auth.auth().currentUser!.uid).child(newPostId).setValue(true)
+            Api.Feed.REF_FEED.child(Auth.auth().currentUser!.uid).child(newPostId).setValue(["timestamp":timestamp])
             Api.Follow.REF_FOLLOWER.child(Auth.auth().currentUser!.uid).observeSingleEvent(of: .value, with: {
                 snapshot in
                 let arraysnapshot = snapshot.children.allObjects as! [DataSnapshot]
                 arraysnapshot.forEach({ (child) in
                   print(child.key)
-                    Api.Feed.REF_FEED.child(child.key).updateChildValues(["\(newPostId)":true])
+                    Api.Feed.REF_FEED.child(child.key).child(newPostId).setValue(["timestamp":timestamp])
                     let newNotificationId = Api.Notification.REF_NOTIFICATION.child(child.key).childByAutoId().key
                     let newNotificationReference = Api.Notification.REF_NOTIFICATION.child(child.key).child(newNotificationId)
                     newNotificationReference.setValue(["from":Auth.auth().currentUser!.uid, "type":"feed", "objectId":newPostId,"timestamp":timestamp])
@@ -107,7 +107,7 @@ class HelperService{
             })
             
             let myPostsRef = Api.MyPosts.REF_MYPOSTS.child(currentUserId).child(newPostId)
-            myPostsRef.setValue(true, withCompletionBlock: { (error, ref) in
+            myPostsRef.setValue(["timestamp":timestamp], withCompletionBlock: { (error, ref) in
                 if error != nil{
                     ProgressHUD.showError(error!.localizedDescription)
                     return
